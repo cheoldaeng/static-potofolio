@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2231f88699.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/room.css" />
+    <link rel="stylesheet" href="./css/signpopup.css" />
+    <link rel="stylesheet" href="./css/joinpopup.css" />
+  </head>
+  <body>
+    <nav id="main-navi">
+      <h1 class="logo">
+        <a href="./index.html">
+          <span class="text-primary">
+            <i class="fab fa-airbnb"></i>aribnb
+          </span>
+        </a>
+      </h1>
+      <ul id="list">
+        <li>
+          <div class="item">
+            <a href="index.html"><i class="fas fa-globe"></i></a>
+          </div>
+        </li>
+        <li>
+          <div class="item"><a href="#">숙소 호스트 되기</a></div>
+        </li>
+        <li>
+          <div class="item"><a href="#">체팅 호스팅 하기</a></div>
+        </li>
+        <li>
+          <div class="item"><a href="#">도움말</a></div>
+        </li>
+        <li>
+          <div class="item" onclick="openLogin();">
+            <a href="#join-popup">로그인</a>
+          </div>
+        </li>
+        <li>
+          <div class="item" onclick="openSign();">
+            <a href="#sign-popup" id="signup">회원가입</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <nav id="contentbar">
+      <div class="container">
+        <div class="container_room">
+          <ul>
+            <li><a href="#">숙소</a></li>
+            <li><a href="#">장기숙박</a></li>
+            <li><a href="#">체험</a></li>
+            <li>
+              <a href="#"
+                >온라인체험&nbsp;
+                <div class="content_box">
+                  <div class="newbox"><p>new</p></div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="container_box">
+          <div class="box">
+            <p>위치</p>
+            <input
+              type="text"
+              placeholder="도시, 랜드마크 또는 주소를 입력하세요."
+            />
+          </div>
+          <div class="line"></div>
+          <div class="box">
+            <p>체크인/체크아웃</p>
+            <input type="text" placeholder="날짜 추가" />
+          </div>
+          <div class="line"></div>
+          <div class="box">
+            <p>인원</p>
+            <input type="text" placeholder="게스트 추가" />
+          </div>
+
+          <div class="box" style="width: 10%;">
+            <div class="newbox search">
+              <p><i class="fas fa-search"></i> 검색</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="exp1">
+      <div class="notice">
+        <h1><span>모두가 힘을 모아 함께 한다면, 이겨낼 수 있습니다.</span></h1>
+      </div>
+      <div class="grid">
+        <div class="note">
+          <div class="newbox"><p>NEW</p></div>
+          <div class="item photo"></div>
+          <div class="explanation">
+            <h3>온라인 체험</h3>
+            <p>
+              세계 각지의 호스트가 진행하고 모두 함께하는 독특한 체험을
+              즐겨보세요.
+            </p>
+          </div>
+        </div>
+        <div class="note">
+          <div class="item photo"></div>
+          <div class="explanation">
+            <h3>장기 숙박</h3>
+            <p>
+              한 달 이상 장기 숙박할 숙소를 에어비앤비에서 찾아보세요.
+            </p>
+          </div>
+        </div>
+        <div class="note">
+          <div class="newbox"><p>NEW</p></div>
+          <div class="item photo"></div>
+          <div class="explanation">
+            <h3>구호 인력을 위한 숙소</h3>
+            <p>
+              코로나19 구호 인력을 위한 숙소를 찾거나 제공하세요.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section id="contents_sub">
+      <div class="container">
+        <ul>
+          <h4>소개</h4>
+          <br />
+          <li>다양성 및 소속감</li>
+          <br />
+          <li>접근성</li>
+          <br />
+          <li>신뢰와 안전</li>
+          <br />
+          <li>Airbnb Citizen</li>
+          <br />
+          <li>뉴스존</li>
+          <br />
+        </ul>
+        <ul>
+          <h4>커뮤니티</h4>
+          <br />
+          <li>에어비앤비 매거진</li>
+          <br />
+          <li>에어비앤비 비즈니스 프로그램</li>
+          <br />
+          <li>친구 초대하기</li>
+          <br />
+          <li>채용정보</li>
+          <br />
+        </ul>
+        <ul>
+          <h4>호스팅하기</h4>
+          <br />
+          <li>숙소 호스팅</li>
+          <br />
+          <li>체험 호스팅</li>
+          <br />
+          <li>책임감 있는 호스팅</li>
+          <br />
+          <li>Open Homes</li>
+          <br />
+          <li>올림픽</li>
+          <br />
+          <li>자료 센터</li>
+          <br />
+        </ul>
+        <ul>
+          <h4>에어비앤비 지원</h4>
+          <br />
+          <li>도움말 센터</li>
+          <br />
+          <li>에어비앤비 이웃 민원 지원</li>
+          <br />
+        </ul>
+      </div>
+      <hr />
+    </section>
+
+    <footer id="main-footer">
+      <p>
+        &copy; 2020 Airbnb, Inc. All rights reserved ·
+        <a href="#">개인정보 처리방침</a> · <a href="#">이용약관</a> ·
+        <a href="#">사이트맵</a> · <a href="#">한국의 변경된 환불 정책</a>
+      </p>
+    </footer>
+  </div>
+
+  <div id="sign-popup" class="sign-popup">
+    <div class="sign-window">
+      <div class="close-button">
+        <button onclick="closeSign();">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="fbook-login form">
+        <div class="logo">
+          <i class="fab fa-facebook-f">&nbsp;페이스북 계정으로 회원 가입</i>
+        </div>
+      </div>
+      <div class="google-login form">
+        <div class="logo">
+          <i class="fab fa-google">&nbsp;구글 계정으로 회원 가입</i>
+        </div>
+      </div>
+      <div class="line-combo">
+        <div class="line-left"></div>
+        <span>또는</span>
+        <div class="line-right"></div>
+      </div>
+      <div class="email form">
+        <div class="logo">
+          <i class="fas fa-envelope">&nbsp;이메일로 회원 가입</i>
+        </div>
+      </div>
+      <div class="linebar"></div>
+      <div>
+        <p>이미 에어비앤비 계정이 있나요? <a href="#">로그인</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="join-popup" class="join-popup">
+    <div class="join-window">
+      <div class="close-button">
+        <button onclick="closeLogin();">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="fbook-login form">
+        <div class="logo">
+          <i class="fab fa-facebook-f">&nbsp;페이스북 계정으로 로그인</i>
+        </div>
+      </div>
+      <div class="google-login form">
+        <div class="logo">
+          <i class="fab fa-google">&nbsp;구글 계정으로 로그인</i>
+        </div>
+      </div>
+      <div class="line-combo">
+        <div class="line-left"></div>
+        <span>또는</span>
+        <div class="line-right"></div>
+      </div>
+      <div class="id_pw">
+        <input type="text" class="text_input" placeholder="이메일 주소" />
+        <div class="text_icon"><i class="fas fa-envelope"></i></div>
+      </div>
+      <div class="id_pw">
+        <input type="password" class="text_input" placeholder="비밀번호" />
+        <div class="text_icon"><i class="fas fa-lock"></i></div>
+      </div>
+      <div class="id_pw">
+        <label>
+          <input type="checkbox" checked="checked" />
+          비밀번호 저장
+        </label>
+        <a href="#" style="right: 0;">비밀번호 보기</a>
+      </div>
+      <a href="#">전화번호로 로그인</a>
+
+      <div class="email form" style="margin-top: 15px;">
+        <div class="logo">
+          <p style="font-weight: 700;">로그인</p>
+        </div>
+      </div>
+      <div class="linebar"></div>
+      <div>
+        <p>이미 에어비앤비 계정이 없으세요? <a href="#">회원가입</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JQuery 라이브러리 -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    var sign = document.querySelector(".sign-popup");
+    function openSign() {
+      sign.style.display = "block";
+    }
+    function closeSign() {
+      sign.style.display = "none";
+      bg.style.opacity = 1;
+    }
+  </script>
+  <script>
+    var login = document.querySelector(".join-popup");
+    function openLogin() {
+      login.style.display = "block";
+    }
+    function closeLogin() {
+      login.style.display = "none";
+      bg.style.opacity = 1;
+    }
+  </script>
+  </body>
+</html>

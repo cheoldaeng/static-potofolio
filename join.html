@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2231f88699.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .join-popup {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        z-index: 2;
+      }
+      .join-window {
+        background-color: #fefefe;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #888;
+        width: 568px;
+        padding: 24px;
+        line-height: 20.02px;
+        z-index: 10;
+      }
+      .join-window a {
+        text-decoration: none;
+        color: rgb(0, 132, 137);
+        font-weight: 800;
+      }
+      .join-window a:hover {
+        text-decoration: underline;
+      }
+      .join-popup .form {
+        width: 504px;
+        padding: 10px 22px;
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 7px;
+        border-radius: 4px;
+      }
+      .join-popup .form:hover {
+        cursor: pointer;
+      }
+
+      .join-popup .logo i {
+        font-weight: 800;
+      }
+
+      .join-popup .fbook-login {
+        background-color: #4568b2;
+        color: white;
+        text-align: center;
+        border: 2px solid #4568b2;
+      }
+      .join-popup .google-login {
+        background-color: white;
+        text-align: center;
+        border: 2px solid gray;
+      }
+      .join-popup .email {
+        background-color: rgb(255, 90, 95);
+        text-align: center;
+        color: white;
+        border: 2px solid rgb(255, 90, 95);
+      }
+
+      .join-popup .close-button > button {
+        background-color: white;
+        border-width: 0px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 8px;
+      }
+      .join-popup .line-combo {
+        text-align: center;
+        margin: 15px 0;
+        display: flex;
+        justify-content: space-around;
+      }
+      .join-popup .line-combo > span {
+        font-weight: 800;
+        display: absolute;
+      }
+      .join-popup .line-left {
+        width: 220px;
+        border-bottom: 1px solid rgb(235, 235, 235);
+        position: relative;
+        bottom: 10px;
+      }
+      .join-popup .line-right {
+        width: 220px;
+        border-bottom: 1px solid rgb(235, 235, 235);
+        position: relative;
+        bottom: 10px;
+      }
+      .join-popup .linebar {
+        margin-top: 15px;
+        width: 504px;
+        border-bottom: 1px solid rgb(235, 235, 235);
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .id_pw {
+        width: 100%;
+        margin: 5px 0 15px 0;
+        display: flex;
+      }
+      .id_pw a {
+        position: absolute;
+        margin-right: 22px;
+      }
+      .text_input {
+        width: 95%;
+        padding: 15px;
+        display: inline-block;
+        border-left: 1px solid rgb(235, 235, 235);
+        border-top: 1px solid rgb(235, 235, 235);
+        border-bottom: 1px solid rgb(235, 235, 235);
+        border-right: 1px solid white;
+      }
+      .text_icon {
+        width: 5%;
+        padding: 15px 15px 15px 0px;
+        position: relative;
+        border-left: 1px solid white;
+        border-top: 1px solid rgb(235, 235, 235);
+        border-bottom: 1px solid rgb(235, 235, 235);
+        border-right: 1px solid rgb(235, 235, 235);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="join-popup" class="join-popup">
+      <div class="join-window">
+        <div class="close-button">
+          <button onclick="">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="fbook-login form">
+          <div class="logo">
+            <i class="fab fa-facebook-f">&nbsp;페이스북 계정으로 로그인</i>
+          </div>
+        </div>
+        <div class="google-login form">
+          <div class="logo">
+            <i class="fab fa-google">&nbsp;구글 계정으로 로그인</i>
+          </div>
+        </div>
+        <div class="line-combo">
+          <div class="line-left"></div>
+          <span>또는</span>
+          <div class="line-right"></div>
+        </div>
+        <div class="id_pw">
+          <input type="text" class="text_input" placeholder="이메일 주소" />
+          <div class="text_icon"><i class="fas fa-envelope"></i></div>
+        </div>
+        <div class="id_pw">
+          <input type="password" class="text_input" placeholder="비밀번호" />
+          <div class="text_icon"><i class="fas fa-lock"></i></div>
+        </div>
+        <div class="id_pw">
+          <label>
+            <input type="checkbox" checked="checked" />
+            비밀번호 저장
+          </label>
+          <a href="#" style="right: 0;">비밀번호 보기</a>
+        </div>
+        <a href="#">전화번호로 로그인</a>
+
+        <div class="email form" style="margin-top: 15px;">
+          <div class="logo">
+            <p style="font-weight: 700;">로그인</p>
+          </div>
+        </div>
+        <div class="linebar"></div>
+        <div>
+          <p>이미 에어비앤비 계정이 없으세요? <a href="#">회원가입</a></p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var join_popup = document.getElemetById("join-popup");
+      function join_close() {
+        join_popup.style.display = "none";
+      }
+      function join_open() {
+        join_popup.style.display = "block";
+      }
+    </script>
+  </body>
+</html>

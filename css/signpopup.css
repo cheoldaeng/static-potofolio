@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.sign-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 2;
+}
+.sign-window {
+  background-color: #fefefe;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #888;
+  width: 568px;
+  padding: 24px;
+  line-height: 20.02px;
+  z-index: 10;
+}
+.sign-window a {
+  text-decoration: none;
+  color: rgb(0, 132, 137);
+  font-weight: 800;
+}
+.sign-window a:hover {
+  text-decoration: underline;
+}
+.sign-popup .form {
+  width: 504px;
+  padding: 10px 22px;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 7px;
+  border-radius: 4px;
+}
+.sign-popup .form:hover {
+  cursor: pointer;
+}
+
+.sign-popup .logo i {
+  font-weight: 800;
+}
+
+.sign-popup .fbook-login {
+  background-color: #4568b2;
+  color: white;
+  text-align: center;
+  border: 2px solid #4568b2;
+}
+.sign-popup .google-login {
+  background-color: white;
+  text-align: center;
+  border: 2px solid gray;
+}
+.sign-popup .email {
+  background-color: rgb(255, 90, 95);
+  text-align: center;
+  color: white;
+  border: 2px solid rgb(255, 90, 95);
+}
+
+.sign-popup .close-button > button {
+  background-color: white;
+  border-width: 0px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 8px;
+}
+.sign-popup .line-combo {
+  text-align: center;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.sign-popup .line-combo > span {
+  font-weight: 800;
+  display: absolute;
+}
+.sign-popup .line-left {
+  width: 220px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  position: relative;
+  bottom: 10px;
+}
+.sign-popup .line-right {
+  width: 220px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  position: relative;
+  bottom: 10px;
+}
+.sign-popup .linebar {
+  margin-top: 15px;
+  width: 504px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

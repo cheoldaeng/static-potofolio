@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-navi {
+  display: flex;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  color: black;
+  justify-content: space-between;
+  z-index: 1;
+  /* 숫자가 높을수록 우선순위가 높음 */
+  padding: 20px 70px;
+}
+
+#main-navi .logo a {
+  color: red;
+  text-decoration: none;
+}
+
+#main-navi ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#main-navi ul li a {
+  color: black;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+  text-decoration: none;
+}
+
+#main-navi ul li a:hover {
+  background: rgb(243, 243, 243);
+  border-radius: 5px;
+}
+
+input {
+  border: none;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#contentbar a {
+  text-decoration: none;
+  line-height: 18px;
+  color: black;
+  font-size: 16px;
+}
+.container {
+  display: block;
+  margin: 0px 0px 40px;
+  padding: 0px 70px;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 800;
+}
+
+.container_room {
+  display: block;
+  width: 100%;
+}
+.container_room ul {
+  display: flex;
+  list-style: none;
+  float: left;
+  margin: 20px 0;
+}
+.container_room ul li {
+  display: flex;
+  float: left;
+  margin-left: 8px;
+  padding-left: 5px;
+}
+.content_box {
+  display: inline-block;
+}
+.newbox {
+  position: relative;
+  background: #ff385c;
+  color: #ffffff;
+  width: 35px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.container_box {
+  width: 100%;
+  display: flex;
+  border-radius: 12px;
+  box-shadow: 0px 3px 3px 4px rgb(235, 235, 235);
+}
+.container_box p {
+  padding: 0 0 6px;
+}
+
+.box {
+  padding: 16px 22px;
+  border: 2px none;
+  border-radius: 12px;
+  position: relative;
+  display: block;
+  width: 30%;
+}
+.box:hover {
+  border: solid lightgray;
+}
+.search {
+  margin: 2px;
+  padding: 11px;
+  width: 100%;
+  height: 46px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+}
+.container_box .line {
+  width: 1px;
+  height: 44px;
+  align-self: center;
+  border-left: 1px solid rgb(235, 235, 235);
+  /* rgb(235, 235, 235) */
+  position: relative;
+}
+
+#exp1 {
+  padding: 0px 80px;
+}
+.notice {
+  width: 60%;
+  display: block;
+  margin-bottom: 60px;
+}
+#exp1 h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#exp1 span {
+  background: linear-gradient(
+    to right,
+    rgb(146, 23, 77) 9.38%,
+    rgb(228, 29, 92) 88.54%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#exp1 .grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+#exp1 .item {
+  position: relative;
+  padding: 3rem;
+  font-size: 1rem;
+  text-align: left;
+}
+#exp1 .photo {
+  height: 300px;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;
+}
+#exp1 .newbox {
+  position: absolute;
+  background: white;
+  color: black;
+  width: 40px;
+  height: 25px;
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  z-index: 1;
+}
+#exp1 .grid .note:nth-child(1) .item {
+  background: url("../room_img/exp.jpg") no-repeat center center/cover;
+}
+#exp1 .grid .note:nth-child(2) .item {
+  background: url("../room_img/room.jpg") no-repeat center center/cover;
+}
+#exp1 .grid .note:nth-child(3) .item {
+  background: url("../room_img/doctor.jpg") no-repeat center center/cover;
+}
+#exp1 .note {
+  display: flex;
+  width: 100%;
+  border-radius: 15px;
+  flex-direction: column;
+  border: 1px solid rgb(235, 235, 235);
+  box-shadow: 0px 3px 5px 3px rgb(241, 241, 241);
+}
+.explanation {
+  padding: 10px 20px 0px 20px;
+}
+.explanation {
+  font-size: 18px;
+  line-height: 22px;
+}
+#contents_sub {
+  margin-top: 40px;
+}
+
+#contents_sub .container {
+  padding: 15px 0 20px 120px;
+  display: flex;
+  float: left;
+
+  font-size: 1rem;
+  line-height: 18px;
+}
+#contents_sub ul {
+  list-style: none;
+  padding-right: 180px;
+  margin-bottom: 30px;
+}
+#contents_sub ul li {
+  font-weight: 100;
+}
+
+#contents_sub hr {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 1px solid rgb(241, 241, 241);
+}
+#main-footer {
+  margin: 5px 0 22px 0;
+  padding-left: 70px;
+  font-weight: 100;
+}
+
+#main-footer a {
+  color: black;
+  text-decoration: none;
+}
+
+#main-footer a:hover {
+  text-decoration: underline;
+}
+hr {
+  margin-top: 30px;
+  width: 100%;
+  border: 1px solid rgb(241, 241, 241);
+}

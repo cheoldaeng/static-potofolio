@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>체험</title>
+    <script
+      src="https://kit.fontawesome.com/2231f88699.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/grid.css" />
+    <link rel="stylesheet" href="./css/signpopup.css" />
+    <link rel="stylesheet" href="./css/joinpopup.css" />
+  </head>
+  <body>
+    <nav id="main-navi">
+      <h1 class="logo">
+        <a href="./index.html">
+          <span class="text-primary">
+            <i class="fab fa-airbnb"></i>aribnb
+          </span>
+        </a>
+      </h1>
+      <ul id="list">
+        <li>
+          <div class="item">
+            <a href="index.html"><i class="fas fa-globe"></i></a>
+          </div>
+        </li>
+        <li>
+          <div class="item"><a href="#">숙소 호스트 되기</a></div>
+        </li>
+        <li>
+          <div class="item"><a href="#">체팅 호스팅 하기</a></div>
+        </li>
+        <li>
+          <div class="item"><a href="#">도움말</a></div>
+        </li>
+        <li>
+          <div class="item" onclick="openLogin();">
+            <a href="#join-popup">로그인</a>
+          </div>
+        </li>
+        <li>
+          <div class="item" onclick="openSign();">
+            <a href="#sign-popup" id="signup">회원가입</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div id="container">
+      <h5>에어비엔비 체험</h5>
+      <h1>현지인이 호스팅하는 하나뿐인 체험</h1>
+    </div>
+    <br />
+    <div id="notice">
+      <div class="hightlight"></div>
+      <div class="notice_note">
+        <h3>
+          코로나바이러스 감염증(코로나19)으로 인한 에어비앤비 체험 일시 중지
+        </h3>
+        <p>
+          에어비앤비 커뮤니티의 건강과 안전을 위해 에어비앤비 체험 운영을 2020년
+          4월 30일까지 잠시 중단합니다. 예약하기에 앞서 도움말 센터를 방문하여
+          코로나19 관련 최신 업데이트 사항을 확인하세요.
+          <a href="#">자세히 알아보기</a>
+        </p>
+      </div>
+    </div>
+    <br />
+    <section id="exp">
+      <div class="grid">
+        <div class="item photo">
+          <div class="option">
+            <h2>쿠킹</h2>
+          </div>
+        </div>
+        <div class="item photo">
+          <div class="option">
+            <h2>동물</h2>
+          </div>
+        </div>
+        <div class="item photo">
+          <div class="option">
+            <h2>어드벤처</h2>
+          </div>
+        </div>
+        <div class="item explanation">
+          <h5>3000개 이상의 체험</h5>
+          <h3>쿠킹</h3>
+          <p>
+            가족처럼 따스한 환대를 받으며 현지인과 함께 요리를 만들고
+            즐겨보세요.
+          </p>
+        </div>
+        <div class="item explanation">
+          <h5>1000개 이상의 체험</h5>
+          <h3>동물</h3>
+          <p>동물과 동물 보호 운동가와 함께하는 마법 같은 체험</p>
+        </div>
+        <div class="item explanation">
+          <h5>500개 이상의 체험</h5>
+          <h3>어드벤처</h3>
+          <p>
+            독특한 장소로 떠나는 특별한 여정 - 모든 것이 준비 되어 있으니 걱정
+            없이 떠나세요.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="exp2">
+      <h2>전 세계의 에어비앤비 호스트를 소개합니다.</h2>
+      <div class="grid">
+        <div class="item photo"></div>
+        <div class="item photo"></div>
+        <div class="item photo"></div>
+        <div class="item photo"></div>
+        <div class="item explanation">
+          <h3>DJ와 함께하는 음악 역사문화 투어</h3>
+          <h5>Havana, Cuba</h5>
+        </div>
+        <div class="item explanation">
+          <h3>원주민 요리사와 함께 멕시코 전통 소스 만들기</h3>
+          <h5>멕시코 멕시코시티</h5>
+        </div>
+        <div class="item explanation">
+          <h3>현지 가이드와 함께하는 경이로운 사막 투어</h3>
+          <h5>오만 무스카트</h5>
+        </div>
+        <div class="item explanation">
+          <h3>말 치료사의 지도를 받으며 말과 교감하기</h3>
+          <h5>스페인 바르셀로나</h5>
+        </div>
+      </div>
+    </section>
+    <section id="icon">
+      <div class="box bg-lightgray">
+        <h3>에어비앤비 체험은 퀄리티가 검증되었습니다.</h3>
+      </div>
+      <div class="box2 bg-lightgray">
+        <div class="inbox">
+          <img src="./img_grid/icon1.jpg" width="32px" alt="icon1" />
+          <h4>현지 전문가</h4>
+          <p>
+            자신이 사는 곳과 하는 일을 진정으로 사랑하는 현지인이 진행합니다.
+          </p>
+        </div>
+        <div class="inbox">
+          <img src="./img_grid/icon2.jpg" width="32px" alt="icon2" />
+          <h4>소그룹</h4>
+          <p>
+            소수 인원으로 진행되기 때문에 참여자 개개인에게 집중하는 방식으로
+            체험이 진행됩니다.
+          </p>
+        </div>
+        <div class="inbox">
+          <img src="./img_grid/icon3.jpg" width="32px" alt="icon3" />
+          <h4>엄격한 기준 충족</h4>
+          <p>모든 체험은 특별한 기회 제공이라는 기준을 충족해야 합니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="sign-popup" class="sign-popup">
+      <div class="sign-window">
+        <div class="close-button">
+          <button onclick="closeSign();">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="fbook-login form">
+          <div class="logo">
+            <i class="fab fa-facebook-f">&nbsp;페이스북 계정으로 회원 가입</i>
+          </div>
+        </div>
+        <div class="google-login form">
+          <div class="logo">
+            <i class="fab fa-google">&nbsp;구글 계정으로 회원 가입</i>
+          </div>
+        </div>
+        <div class="line-combo">
+          <div class="line-left"></div>
+          <span>또는</span>
+          <div class="line-right"></div>
+        </div>
+        <div class="email form">
+          <div class="logo">
+            <i class="fas fa-envelope">&nbsp;이메일로 회원 가입</i>
+          </div>
+        </div>
+        <div class="linebar"></div>
+        <div>
+          <p>이미 에어비앤비 계정이 있나요? <a href="#">로그인</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="join-popup" class="join-popup">
+      <div class="join-window">
+        <div class="close-button">
+          <button onclick="closeLogin();">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="fbook-login form">
+          <div class="logo">
+            <i class="fab fa-facebook-f">&nbsp;페이스북 계정으로 로그인</i>
+          </div>
+        </div>
+        <div class="google-login form">
+          <div class="logo">
+            <i class="fab fa-google">&nbsp;구글 계정으로 로그인</i>
+          </div>
+        </div>
+        <div class="line-combo">
+          <div class="line-left"></div>
+          <span>또는</span>
+          <div class="line-right"></div>
+        </div>
+        <div class="id_pw">
+          <input type="text" class="text_input" placeholder="이메일 주소" />
+          <div class="text_icon"><i class="fas fa-envelope"></i></div>
+        </div>
+        <div class="id_pw">
+          <input type="password" class="text_input" placeholder="비밀번호" />
+          <div class="text_icon"><i class="fas fa-lock"></i></div>
+        </div>
+        <div class="id_pw">
+          <label>
+            <input type="checkbox" checked="checked" />
+            비밀번호 저장
+          </label>
+          <a href="#" style="right: 0;">비밀번호 보기</a>
+        </div>
+        <a href="#">전화번호로 로그인</a>
+
+        <div class="email form" style="margin-top: 15px;">
+          <div class="logo">
+            <p style="font-weight: 700;">로그인</p>
+          </div>
+        </div>
+        <div class="linebar"></div>
+        <div>
+          <p>이미 에어비앤비 계정이 없으세요? <a href="#">회원가입</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JQuery 라이브러리 -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var sign = document.querySelector(".sign-popup");
+      function openSign() {
+        sign.style.display = "block";
+      }
+      function closeSign() {
+        sign.style.display = "none";
+        bg.style.opacity = 1;
+      }
+    </script>
+    <script>
+      var login = document.querySelector(".join-popup");
+      function openLogin() {
+        login.style.display = "block";
+      }
+      function closeLogin() {
+        login.style.display = "none";
+        bg.style.opacity = 1;
+      }
+    </script>
+  </body>
+</html>
